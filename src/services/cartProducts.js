@@ -18,7 +18,6 @@ const addToCart = async ({
   ownerEmail,
   ownerPhone,
   ownerAddress,
-  quantityProduct,
   order,
 }) => {
   const user = await Cart.findOne({
@@ -40,7 +39,6 @@ const addToCart = async ({
       ownerName,
       ownerPhone,
       ownerAddress,
-      quantityProduct,
       ownerEmail,
       orders: [order],
     });
