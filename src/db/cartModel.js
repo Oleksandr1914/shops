@@ -28,6 +28,11 @@ const cartSchema = new mongoose.Schema(
       default: null,
       require: true,
     },
+    quantityProduct: {
+      type: Number,
+      default: null,
+      require: true,
+    },
     orders: {
       type: Array,
       default: null,
